@@ -1294,7 +1294,7 @@ const PRODUCTS = [
   {
     id: 'interior-shampoo',
     name: 'Interior Shampoo',
-    sub: 'İç Temizlik Şampuanı',
+    sub: 'İç Temizlik Şampuanı — 500 ml',
     cat: 'ic',
     catColor: '#B8650A',
     tags: ['İç Mekan', 'Temizlik'],
@@ -1305,7 +1305,55 @@ const PRODUCTS = [
     desc: ['Koltuk, tavan döşemesi ve kapı panellerini temizler', 'Köpüren formülü kirleri yüzeye çıkarır', 'Kuru sonuçla iz bırakmaz'],
     how: ['Yüzeye spreyleyin ve fırçayla çalışın', 'Köpüğü sünger veya bezle kaldırın', 'Kurumaya bırakın'],
     who: 'Döşeme ve halı temizliği için temel ürün. Detaylama hizmeti verenler için de ideal.',
-    alts: ['bumper-trim-gel', 'leather-care-balm']
+    alts: ['multiwash-tfr', 'magic-sponge']
+  },
+  {
+    id: 'multiwash-tfr',
+    name: 'Multiwash TFR',
+    sub: 'Çok Amaçlı Temizleyici — 5 LT',
+    cat: 'ic',
+    catColor: '#B8650A',
+    tags: ['İç Mekan', 'Profesyonel'],
+    tagBg: '#FDF0E3', tagCol: '#B8650A',
+    problems: ['ic-kir'],
+    surface: 'Her yüzey',
+    duration: 'Çok kullanımlık',
+    desc: ['İç mekan yüzeylerinde çok amaçlı derin temizlik sağlar', 'Plastik, kumaş, halı ve sert yüzeylerde etkili', 'Profesyonel kullanım için ekonomik 5 litrelik boy'],
+    how: ['Suyla seyrelterek uygulayın', 'Fırça veya bezle yüzeyi çalışın', 'Temiz bezle silin veya durulayın'],
+    who: 'Oto detaylama merkezleri ve filo araçlarında kapsamlı iç temizlik yapanlar için.',
+    alts: ['interior-shampoo', 'super-clean-sanitiser']
+  },
+  {
+    id: 'super-clean-sanitiser',
+    name: 'Super Clean Sanitiser',
+    sub: 'Temizleyici & Dezenfektan — 5 LT',
+    cat: 'ic',
+    catColor: '#B8650A',
+    tags: ['İç Mekan', 'Hijyen'],
+    tagBg: '#FDF0E3', tagCol: '#B8650A',
+    problems: ['ic-kir'],
+    surface: 'Sert & yumuşak yüzeyler',
+    duration: 'Çok kullanımlık',
+    desc: ['Temizleme ve dezenfeksiyon işlemini tek adımda yapar', 'Bakteri ve kötü koku kaynaklarını ortadan kaldırır', 'Araç içi hijyen için profesyonel çözüm'],
+    how: ['Doğrudan veya seyreltilmiş olarak yüzeye uygulayın', 'Birkaç saniye bekleyin', 'Bezle silin veya durulayın'],
+    who: 'Taksi, servis aracı, kiralık araç gibi yoğun kullanımlı ve çok kişinin kullandığı araçlar için.',
+    alts: ['multiwash-tfr', 'odour-eliminator-500']
+  },
+  {
+    id: 'magic-sponge',
+    name: 'Magic Sponge',
+    sub: 'Sihirli Temizlik Süngeri',
+    cat: 'ic',
+    catColor: '#B8650A',
+    tags: ['İç Mekan', 'Aksesuar'],
+    tagBg: '#FDF0E3', tagCol: '#B8650A',
+    problems: ['ic-kir'],
+    surface: 'Plastik / sert yüzey',
+    duration: 'Tek kullanım',
+    desc: ['Kimyasal gerektirmeden inatçı lekeleri ve kirleri siler', 'Torpido, kapı paneli ve sert iç yüzeylerde etkili', 'Sadece su ile aktivasyon yeterli'],
+    how: ['Süngeri suyla ıslatın ve hafifçe sıkın', 'Leke üzerinde hafif baskıyla kaydırın', 'Tek kullanımlık — işlem sonrası atın'],
+    who: 'Kimyasal kullanmadan hızlı iç temizlik isteyenler ve detaylama araç seti tamamlamak isteyenler için.',
+    alts: ['interior-shampoo', 'multiwash-tfr']
   },
   {
     id: 'bumper-trim-gel',
@@ -1321,7 +1369,7 @@ const PRODUCTS = [
     desc: ['Ağarıp solmuş dış plastikleri yeniler', 'Araç kaporta ve tamponlardaki plastik kısımları canlandırır', 'Kir ve yağış koruması sağlar'],
     how: ['Temiz kuru plastik yüzeye uygulayın', 'İnce tabaka halinde dağıtın', 'Gereğinde ikinci kat yapın'],
     who: 'Tampon çerçeveleri, ayna kapakları ve dış plastikler için.',
-    alts: ['super-sheen', 'interior-shampoo']
+    alts: ['super-sheen', 'vinyl-rubber-care']
   },
   {
     id: 'leather-cleaner',
@@ -1469,7 +1517,7 @@ const PROBLEM_MAP = {
   'seramik': { title: 'Uzun süreli seramik ve wax koruma', products: ['rapid-ceramic-spray','uhd-wax','uhd-ceramic-coating','egp'] },
   'cam-leke': { title: 'Cam lekesi ve su izleri', products: ['glass-stain-remover','car-glass-polish','fast-glass'] },
   'cam-temiz': { title: 'Cam temizliği ve buğu', products: ['fast-glass','dry-glass','car-glass-polish'] },
-  'ic-kir': { title: 'İç mekan kirliği', products: ['interior-shampoo','bumper-trim-gel'] },
+  'ic-kir': { title: 'İç mekan kirliği', products: ['interior-shampoo','multiwash-tfr','super-clean-sanitiser','magic-sponge'] },
   'deri': { title: 'Deri koltuk temizlik ve bakımı', products: ['leather-cleaner','leather-care-balm'] },
   'plastik': { title: 'Torpido ve plastik solma', products: ['vinyl-rubber-care','bumper-trim-gel','super-sheen'] },
   'jant-kir': { title: 'Jant kirliği ve fren tozu', products: ['clean-wheels'] },
