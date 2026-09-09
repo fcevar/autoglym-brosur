@@ -1404,6 +1404,40 @@ const PRODUCTS = [
     how: ['Temiz kuru lastiğe sünger ile uygulayın', 'İnce tabaka yeterli — fazlası saçılır'],
     who: 'Aracına bütünlük katmak isteyen herkes için — lastik bakımının temel ürünü.',
     alts: ['clean-wheels', 'super-sheen']
+  },
+
+  // KOKU
+  {
+    id: 'odour-eliminator-500',
+    name: 'Odour Eliminator',
+    sub: 'Koku Giderici — 500 ml',
+    cat: 'ic',
+    catColor: '#B8650A',
+    tags: ['Koku', 'İç Mekan'],
+    tagBg: '#FDF0E3', tagCol: '#B8650A',
+    problems: ['koku'],
+    surface: 'İç mekan / kumaş',
+    duration: 'Tek uygulama',
+    desc: ['Araç içindeki sigara, nem, hayvan ve yiyecek kokularını kaynağından yok eder', 'Kokuyu maskelemez, kalıcı olarak ortadan kaldırır', 'Koltuk, tavan ve halıya güvenle uygulanır'],
+    how: ['Kokuyu alan yüzeye doğrudan spreyleyin', 'Birkaç dakika bekleyip havalandırın', 'Gerekirse tekrar uygulayın'],
+    who: 'Sigara kokusu, evcil hayvan kokusu veya uzun süre kapalı kalan araçlar için. Bireysel kullanıma uygun boy.',
+    alts: ['odour-eliminator-5lt']
+  },
+  {
+    id: 'odour-eliminator-5lt',
+    name: 'Odour Eliminator',
+    sub: 'Koku Giderici — 5 LT',
+    cat: 'ic',
+    catColor: '#B8650A',
+    tags: ['Koku', 'Profesyonel'],
+    tagBg: '#FDF0E3', tagCol: '#B8650A',
+    problems: ['koku'],
+    surface: 'İç mekan / kumaş',
+    duration: 'Çok kullanımlık',
+    desc: ['Araç içindeki tüm kötü kokuları kaynağından kalıcı olarak giderir', 'Garaj, detaylama merkezi ve filo araçları için ekonomik büyük boy', 'Aynı formül — 500 ml ile birebir aynı etki'],
+    how: ['Spreyle veya seyreltip uygulayın', 'Havalandırın ve kurumaya bırakın'],
+    who: 'Oto detaylama merkezleri, araç kiralama ve filo yönetimi için. Sık kullanımda 5 lt çok daha ekonomik.',
+    alts: ['odour-eliminator-500']
   }
 ];
 
@@ -1424,7 +1458,7 @@ const PROBLEM_MAP = {
   'plastik': { title: 'Torpido ve plastik solma', products: ['vinyl-rubber-care','bumper-trim-gel','super-sheen'] },
   'jant-kir': { title: 'Jant kirliği ve fren tozu', products: ['clean-wheels'] },
   'lastik': { title: 'Lastik bakımı ve görünümü', products: ['tyre-gel'] },
-  'koku': { title: 'Araç içi kötü koku', products: [] },
+  'koku': { title: 'Araç içi kötü koku', products: ['odour-eliminator-500','odour-eliminator-5lt'] },
   'clay': { title: 'Boyada pürüzlü his (clay bar)', products: ['liquid-clay-5lt'] },
   'silecek': { title: 'Cam suyu ve silecek sıvısı', products: ['ultimate-screenwash','fast-glass'] }
 };
