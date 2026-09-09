@@ -1308,6 +1308,22 @@ const PRODUCTS = [
     alts: ['super-sheen', 'interior-shampoo']
   },
   {
+    id: 'leather-cleaner',
+    name: 'Leather Cleaner',
+    sub: 'Deri Temizleyici',
+    cat: 'ic',
+    catColor: '#B8650A',
+    tags: ['Deri', 'Temizlik'],
+    tagBg: '#FDF0E3', tagCol: '#B8650A',
+    problems: ['deri'],
+    surface: 'Deri yüzey',
+    duration: 'İhtiyaç halinde',
+    desc: ['Deri koltuklardaki kir, yağ ve lekeyi nazikçe çözer', 'Deriyi zedelemeden derinlemesine temizler', 'Leather Care Balm öncesi hazırlık adımı'],
+    how: ['Deri yüzeye spreyleyin veya beze alın', 'Yumuşak fırça ya da bezle nazikçe ovun', 'Kuru bezle silin, ardından Leather Care Balm uygulayın'],
+    who: 'Deri koltuklarda günlük kir, toz ve leke birikimi olanlar için. Bakımdan önce mutlaka temizlik adımı uygulanmalıdır.',
+    alts: ['leather-care-balm']
+  },
+  {
     id: 'leather-care-balm',
     name: 'Leather Care Balm',
     sub: 'Deri Bakım Yağı',
@@ -1319,9 +1335,9 @@ const PRODUCTS = [
     surface: 'Deri yüzey',
     duration: 'Aylık bakım',
     desc: ['Deri koltuk ve panelleri besler, çatlamayı önler', 'Doğal nem dengesi sağlar', 'Yüzeyi koruyucu film ile kaplar'],
-    how: ['Temiz deri yüzeye küçük miktarda uygulayın', 'Dairesel hareketlerle masaj yaparak yedirin', 'Temiz bezle fazlasını silin'],
-    who: 'Deri döşemeli araç sahipleri için aylık temel bakım ürünü.',
-    alts: ['interior-shampoo']
+    how: ['Temizlenmiş deri yüzeye küçük miktarda uygulayın', 'Dairesel hareketlerle masaj yaparak yedirin', 'Temiz bezle fazlasını silin'],
+    who: 'Deri döşemeli araç sahipleri için aylık temel bakım ürünü. Leather Cleaner ile birlikte kullanın.',
+    alts: ['leather-cleaner']
   },
   {
     id: 'super-sheen',
@@ -1337,7 +1353,23 @@ const PRODUCTS = [
     desc: ['Solmuş dış lastik ve plastikleri canlandırır', 'Uzun süreli parlaklık ve koruma sağlar', 'Dağılmayan ve bulanmayan formül'],
     how: ['Sünger veya bez ile uygulayın', 'Fazlasını silin'],
     who: 'Araç görünümünü tamamlamak isteyenler, galeri sahipleri ve teşhir araçları için.',
-    alts: ['bumper-trim-gel']
+    alts: ['bumper-trim-gel', 'vinyl-rubber-care']
+  },
+  {
+    id: 'vinyl-rubber-care',
+    name: 'Vinyl & Rubber Care',
+    sub: 'Torpido, Vinil & Kauçuk Bakımı',
+    cat: 'ic',
+    catColor: '#B8650A',
+    tags: ['Plastik', 'İç Mekan'],
+    tagBg: '#FDF0E3', tagCol: '#B8650A',
+    problems: ['plastik'],
+    surface: 'İç/Dış plastik & kauçuk',
+    duration: 'Düzenli bakım',
+    desc: ['Torpido, kapı paneli ve iç plastik yüzeyleri nemlendirir ve korur', 'Kauçuk contalar ile dış kauçuk yüzeylerin esnekliğini korur', 'Mat ve doğal görünüm bırakır, yapışkan his yaratmaz'],
+    how: ['Temiz beze küçük miktarda alın', 'Plastik veya kauçuk yüzeye nazikçe uygulayın', 'Fazlasını kuru bezle silin'],
+    who: 'Torpido ve iç plastikleri solmuş, kauçuk contaları çatlamış araç sahipleri için. İç ve dış kauçuk yüzeylerde güvenle kullanılır.',
+    alts: ['bumper-trim-gel', 'super-sheen']
   },
 
   // JANT
@@ -1388,8 +1420,8 @@ const PROBLEM_MAP = {
   'cam-leke': { title: 'Cam lekesi ve su izleri', products: ['glass-stain-remover','car-glass-polish','fast-glass'] },
   'cam-temiz': { title: 'Cam temizliği ve buğu', products: ['fast-glass','dry-glass','car-glass-polish'] },
   'ic-kir': { title: 'İç mekan kirliği', products: ['interior-shampoo','bumper-trim-gel'] },
-  'deri': { title: 'Deri koltuk bakımı', products: ['leather-care-balm'] },
-  'plastik': { title: 'Torpido ve plastik solma', products: ['bumper-trim-gel','super-sheen'] },
+  'deri': { title: 'Deri koltuk temizlik ve bakımı', products: ['leather-cleaner','leather-care-balm'] },
+  'plastik': { title: 'Torpido ve plastik solma', products: ['vinyl-rubber-care','bumper-trim-gel','super-sheen'] },
   'jant-kir': { title: 'Jant kirliği ve fren tozu', products: ['clean-wheels'] },
   'lastik': { title: 'Lastik bakımı ve görünümü', products: ['tyre-gel'] },
   'koku': { title: 'Araç içi kötü koku', products: [] },
