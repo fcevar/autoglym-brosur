@@ -1176,6 +1176,22 @@ const PRODUCTS = [
     alts: ['super-resin-polish', 'advanced-paint-restorer']
   },
   {
+    id: 'clay-bar',
+    name: 'Clay Bar',
+    sub: 'Kil Çubuğu',
+    cat: 'dis',
+    catColor: '#1A6B9A',
+    tags: ['Ön Hazırlık', 'Detaylama'],
+    tagBg: '#E3F0F8', tagCol: '#1A6B9A',
+    problems: ['clay'],
+    surface: 'Islak yüzey',
+    duration: 'Yüzey hazırlığı',
+    desc: ['Boya yüzeyindeki gömülü kirleticileri fiziksel olarak sökerek pürüzsüz yüzey oluşturur', 'Polisaj ve seramik kaplama öncesi zorunlu hazırlık adımı', 'Cam ve janta da güvenle uygulanabilir'],
+    how: ['Yüzeyi clay lubricant ile ıslatın', 'Kili yüzeyde kaydırın — kirler çubuğa yapışacak', 'Temizleyip ardından polish veya wax uygulayın'],
+    who: 'Dokunduğunda kumlu veya pürüzlü hissettiren boyalar için. Seramik veya wax öncesi profesyonellerin vazgeçilmezi.',
+    alts: ['liquid-clay-5lt', 'magma']
+  },
+  {
     id: 'liquid-clay-5lt',
     name: 'Liquid Clay',
     sub: 'Sıvı Kil Temizleyici — 5 LT',
@@ -1459,7 +1475,7 @@ const PROBLEM_MAP = {
   'jant-kir': { title: 'Jant kirliği ve fren tozu', products: ['clean-wheels'] },
   'lastik': { title: 'Lastik bakımı ve görünümü', products: ['tyre-gel'] },
   'koku': { title: 'Araç içi kötü koku', products: ['odour-eliminator-500','odour-eliminator-5lt'] },
-  'clay': { title: 'Boyada pürüzlü his (clay bar)', products: ['liquid-clay-5lt'] },
+  'clay': { title: 'Boyada pürüzlü his (clay bar)', products: ['clay-bar'] },
   'silecek': { title: 'Cam suyu ve silecek sıvısı', products: ['ultimate-screenwash','fast-glass'] }
 };
 
